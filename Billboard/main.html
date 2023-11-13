@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Billboard</title>
+    <link rel="icon" type="image/x-icon" href="image/product/favicon.ico">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hover.css/css/hover.css">
+    <link rel="stylesheet" href="hover.css/css/hover.css">
+    
+  </head>
+
+  <body>
+        <div class="text-start fixed-top m-5">
+          <a href="https://www.keychronthailand.com">
+          <img src="image/product/logo.webp" class="fadein hvr-skew" alt="...">
+          </a>
+        </div>
+
+      <div class="text-center">
+        <div class="mt-5 pt-4 display-1 fw-bold fadein">Keychron <span class="redd hvr-shrink">K2</span> V.2</div>
+        <div class="mb-5 display-5 fadein hvr-skew-forward">โปรกว่าที่เคย</div>
+      </div>
+      <img src="image/e.webp" class="e float-end fadeinslow" alt="...">
+
+      <a href="https://www.keychronthailand.com/products/keychron-k2-hot-swappable">
+        <div id="wrapper">
+          <div class="me fadein delay100ms hvr-grow"></div>
+        </div>
+      </a>
+
+        <div class="float-end fadein">
+          <div class="row">
+            <div class="col-6">
+              <article class="project-card">
+                <div class="card-image">
+          		  <a href="https://www.keychronthailand.com/products/keychron-k2-hot-swappable?variant=41669307138280">					
+                  <img src="image/product/side1.webp" class="hvr-grow" id="gallery1" alt="">  
+				  </a>
+                  </div> 
+                </div>
+              </article>
+            </div>
+      
+            <div class="row">
+            <div class="col-6">
+              <article class="project-card">
+                <div class="card-image">
+          		  <a href="https://www.keychron.com/products/keychron-k2-hot-swappable-wireless-mechanical-keyboard?variant=32187465433177">										
+                  <img src="image/product/side2.webp" class="hvr-grow" id="gallery2" alt="">
+				  </a>  
+                </div>
+              </article>
+            </div>
+            </div>
+          </div>
+      </div>
+
+    <img src="image/tflip.webp" class="t float-start fixed-bottom fadeinslow" alt="...">
+
+
+
+
+    <div class="text-end fixed-bottom fadein m-4">
+        <div class="border-1 border-dark border-end pe-3">
+          <div class="fs-5">Compatible with<span class="hvr-icon-fade"><i class="bi bi-apple hvr-icon mx-2"></i><i class="bi bi-microsoft hvr-icon"></i></span></div>
+          <div class="fw-semibold fs-3">Apple / Windows</div>
+        </div>
+    </div>
+	
+	<audio autoplay loop id="playAudio">
+	    <source src="kodrock.mp3">
+	</audio>
+
+
+
+    <!--Bootstrap https://codepen.io/IanLunn/details/AxBReL-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="animejs/lib/anime.min.js"></script>
+
+    <script src="index.js"></script>
+    <script>
+      anime({
+        targets: '.t',
+        translateX: 100,
+        translateY: -100,
+        easing: 'easeInOutExpo',
+        rotate: -2,
+        delay: anime.stagger(30)
+      });
+    </script>
+
+    <script>
+      anime({
+        targets: '.e',
+        translateX: -330,
+        translateY: -50,
+        rotate: 2,
+        duration: 2000,
+        delay: anime.stagger(30),
+        easing: 'easeInOutExpo',
+      });
+    </script>
+
+      <script>
+      anime({
+        targets: '.card-image',
+        translateX: -45,
+        duration: 2000,
+        delay: anime.stagger(30),
+        easing: 'easeInOutExpo',
+      });
+    </script>
+
+    <script>
+      document.getElementById("zoom").addEventListener(
+  "mousemove",
+  function (e) {
+    let original = document.getElementById("main-img"),
+      magnified = document.getElementById("large-img"),
+      style = magnified.style,
+      x = e.pageX - this.offsetLeft,
+      y = e.pageY - this.offsetTop,
+      imgWidth = original.width,
+      imgHeight = original.height,
+      xperc = (x / imgWidth) * 100,
+      yperc = (y / imgHeight) * 100;
+
+    // Add some margin for right edge
+    if (x > 0.01 * imgWidth) {
+      xperc += 0.15 * xperc;
+    }
+
+    // Add some margin for bottom edge
+    if (y >= 0.01 * imgHeight) {
+      yperc += 0.15 * yperc;
+    }
+
+    // Set the background of the magnified image horizontal
+    style.backgroundPositionX = xperc - 9 + "%";
+    // Set the background of the magnified image vertical
+    style.backgroundPositionY = yperc - 9 + "%";
+
+    // Move the magnifying glass with the mouse movement.
+    style.left = x - 50 + "px";
+    style.top = y - 50 + "px";
+  },
+  false
+);
+
+    </script>
+	
+	<script>
+  	  var audio = document.getElementById("playAudio");
+  	  audio.volume = 0.2;
+	</script>
+	
+	
+	
+	
+	
+	
+	
+  
+  </body>
+</html>

@@ -1,0 +1,164 @@
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+audio, embed {
+    position: absolute;
+    z-index: -9999;
+}
+
+.t {
+  height: 450px;
+}
+.e {
+  height: 220px;
+  position: relative;
+  bottom: 150px;
+  right: 50px;
+}
+
+#gallery1{
+  height: 170px;
+  position: relative;
+  top: 30px;
+  left: 295px;
+}
+
+#gallery2{
+  height: 170px;
+  position: relative;
+  top: 40px;
+  left: 295px;
+}
+
+#smolimg{
+  height: 50px;
+}
+
+#wrapper {
+    width: 1200px; height: 493px;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);  
+  }
+  .me {
+    position: relative; width: 1200px; height: 493px;
+    transform: translateZ(80px) scale(0.8);
+  }
+  .me::before, .me::after {
+    content:''; position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+    background: url(image/product/keychron75.webp) no-repeat 0 0;
+    
+    
+  }
+  
+  .me::after {
+    height: 30px; top: auto; bottom: -15px; z-index: -1; 
+    filter: blur(15px);
+    background-size: 100% 30px;
+    
+  }
+
+  .text::after {
+    content:'';
+    position: absolute; left: 0; bottom:0;
+    width: 100%;  line-height: 6;
+    z-index: 1;
+    background: linear-gradient(135deg, white 0%, rgba(255, 255, 255, 0.36) 39%, rgba(255, 255, 255, 0.07) 41%, rgba(255, 255, 255, 0) 51%, black 100%);
+
+  }
+
+.redd {
+   color: #FF5543;
+   text-decoration: underline;
+}
+
+/* Set vendor-specific animation name and duration on .logo class */
+
+.fadein {
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 2.5s;
+	-moz-animation-name: fadein;
+	-moz-animation-duration: 2.5s;
+	-ms-animation-name: fadein;
+	-ms-animation-duration: 2.5s;
+	-o-animation-name: fadein;
+	-o-animation-duration: 2.5s;
+	animation-name: fadein;
+	animation-duration: 2.5s;
+}
+
+/* Set vendor-specific keyframes for animation on load 
+   Position and opacity are animated */
+
+@-webkit-keyframes fadein {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@-ms-keyframes fadein {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@-o-keyframes fadein {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+@keyframes fadein {
+	0% { opacity: 0;}
+	100% { opacity: 1;}
+}
+
+/* Set vendor-specific animation name and duration on .logo class */
+
+.fadeinslow {
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 3s;
+	-moz-animation-name: fadein;
+	-moz-animation-duration: 3s;
+	-ms-animation-name: fadein;
+	-ms-animation-duration: 3s;
+	-o-animation-name: fadein;
+	-o-animation-duration: 3s;
+	animation-name: fadein;
+	animation-duration: 3s;
+}
+
+/* Set vendor-specific keyframes for animation on load 
+   Position and opacity are animated */
+
+@-webkit-keyframes fadein {
+	0% { opacity: .2;}
+	100% { opacity: 1;}
+}
+
+@-moz-keyframes fadein {
+	0% { opacity: .2;}
+	100% { opacity: 1;}
+}
+
+@-ms-keyframes fadein {
+	0% { opacity: .2;}
+	100% { opacity: 1;}
+}
+
+@-o-keyframes fadein {
+	0% { opacity: .2;}
+	100% { opacity: 1;}
+}
+
+@keyframes fadein {
+	0% { opacity: .2;}
+	100% { opacity: 1;}
+}
+
+
+.delay100ms{
+  animation-delay: 0.1s;
+}
+

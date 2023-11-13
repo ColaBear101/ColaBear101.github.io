@@ -1,0 +1,219 @@
+/* CSS Document */
+body{
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+}
+
+nav{
+	width: 100%;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0px;
+  overflow: hidden;
+  background: #112D4E;
+  color: #F9F7F7;
+  font-size: 18px;
+}
+
+nav li{
+  float: left;
+}
+
+nav li a.active{
+  	background-color: #3F72AF;
+	color: #F9F7F7;
+	font-weight: bold;
+}
+
+nav li a{
+	display: block;
+	color: white;
+	text-size: center;
+	padding: 7px 20px 7px 10px;
+	text-decoration: none;
+}
+
+nav li a:hover{
+  background: #0B1F36;
+  color: #F9F7F7;
+}
+
+nav li i{
+  padding: 15px 10px 15px 10px;
+}
+
+header{
+  padding: 30px;
+  font-size: 40px;
+  height: 25vh;
+  
+}
+
+header h1{
+  text-align: center;
+  background-image: url("../img/textbg.jpg");  
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+section{
+  background-color: rgba(219, 226, 239,0.8);
+  margin: auto 0px 2vh auto;
+  padding: 40px 25vh 40px 25vh;
+  
+}
+
+section div{
+  background-color: rgba(255,255,255,0.8);
+  outline: 0.5rem solid rgba(255,255,255,0.8);
+  border-radius: 20px;
+  border-bottom: thick;
+  margin-bottom: 50px;
+}
+
+section pre{
+  font-size: 20px;
+  padding: 16px 48px;
+  margin: 70px 50px;
+}
+
+footer{
+  background: #F9F7F7;
+  text-align: center;
+  color: #112D4E;
+  padding: 15px;
+  
+  left: 0;
+  bottom: 0;
+  width: 98.4%;
+}
+
+/* CSS Class */
+
+.head{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.head2{
+  font-size: 27px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.8);
+  outline: 0.5rem solid rgba(255,255,255,0.8);
+  border-radius: 5px;
+  border-bottom: thick;		
+}
+
+.content{
+  font-size: 25px;
+  padding: 5px 25px;
+}
+
+.centertext{
+  text-align: center;
+  font-size: 25px;
+}
+
+.bordercode{
+  background-color: #F9F7F7;
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold;
+  outline-offset: 0.5rem;
+
+}
+
+.borderoutput{
+  background-color: #F9F7F7;
+  border: 0.5rem outset pink;
+  outline: 0.5rem solid khaki;
+  box-shadow: 0 0 0 2rem skyblue;
+  border-radius: 12px;
+  font: bold 1rem;
+  outline-offset: 0.5rem;
+
+}
+
+.break{
+  word-break: break-all;
+
+}
+
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+
+/* Css id*/
+
+#bg1{
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+#bg2{
+  background-image: url("../img/Meerkat Galaxy.jpg");		
+  background-size: cover;
+}
+
+#header1{
+  background-image: url("../img/bg.jpg");
+  background-repeat: repeat-x;
+  background-size: auto;
+  
+}
+
+#header2{
+background-image: url("../img/IrisNebula.png");
+  background-size: cover;
+  
+}
+
+#profile{
+	display: grid;
+	justify-items: center;
+	padding: 50px;
+}
+
+
+/* Table style*/
+
+table, td, th {  
+  border: 2px solid black;
+  background-color: white;
+  border-collapse: collapse;
+  color: black;
+  text-align: center;
+  padding: 5px 2.5px;
+}
+
+table{
+  width: 100%;
+  height: 75vh;
+  align-items: center;
+}
+
+td{
+  font-size: 20px;
+}
+
+td:hover{
+  background: #D2D2D2;
+  color: #112D4E;
+}
+
+/*    */
+
+
+
+
+
+
+

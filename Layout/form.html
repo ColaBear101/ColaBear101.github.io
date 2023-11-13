@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="img/icon.gif">
+  
+<title>My Website</title>
+  
+<!-- Google font -->	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet"> 
+  
+<!-- Import css -->	
+<link rel="stylesheet" href="css/style.css">
+  
+<!--Font icon-->	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  
+<script src="https://kit.fontawesome.com/89e9a98e7e.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body id="bg1">
+
+<!-- Navigation bar -->	
+  <nav style="background-color: cadetblue; width: 100%">
+    <ul>
+      <li><a href="index.html"><i class="fa-solid fa-igloo"></i>Home</a></li>
+	    <li><a href="text.html"><i class="fa-solid fa-font"></i>Text</a></li>
+      <li><a href="color.html"><i class="fa-solid fa-palette"></i>Color</a></li>
+      <li><a href="list.html"><i class="fa-solid fa-list"></i>List</a></li>
+      <li><a href="image.html"><i class="fa-solid fa-images"></i>Image</a></li>
+      <li><a href="link.html"><i class="fa-solid fa-link"></i>Link</a></li>
+      <li><a href="table.html"><i class="fa-solid fa-table-list"></i>Table</a></li>
+      <li><a href="css.html"><i class="fa-brands fa-css3"></i>CSS</a></li>
+      <li><a href="div.html"><i class="fa-solid fa-table"></i>Div</a></li>
+      <li><a class = "active" href="form.html"><i class="fa-solid fa-file-lines"></i>Form</a></li>
+    </ul>
+  </nav>
+  
+<!-- Header -->	
+  <header id="header1">
+    <h1>HTML Form</h1>
+  </header>
+  
+<!-- Content -->	
+  <section>
+	<div>	 
+	<a class="head">HTML Forms</a>	
+    <p class="content">An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+	</div>		
+    <!--------------------- ----------------------->	
+	<div>		
+	<a class="head">Text Fields</a>	
+    <p class="content">The &lt;input type="text"&gt; defines a single-line input field for text input.</p>		
+	</div>		
+	<a class="head2">code : </a>
+    <pre class="bordercode">
+    <code>
+	&lt;form&gt;
+  		&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+  		&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;
+  		&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+  		&lt;input type="text" id="lname" name="lname"&gt;
+	&lt;/form&gt;
+	</code>
+	</pre> 	
+			
+		
+	<a class="head2">output : </a>		
+    <pre class="bordercode">
+    <form>
+  	<label for="fname">First name:</label><br>
+  	<input type="text" id="fname" name="fname"><br>
+  	<label for="lname">Last name:</label><br>
+  	<input type="text" id="lname" name="lname">
+	</form>
+	</pre>
+    <!--------------------- -----------------------> 	
+	<div>		
+	<a class="head">Radio Buttons</a>	
+    <p class="content">The &lt;input type="radio"&gt; defines a radio button.<br>Radio buttons let a user select ONE of a limited number of choices.</p>		
+	</div>		
+	<a class="head2">code : </a>
+    <pre class="bordercode">
+    <code>
+	&lt;p&gt;I love...&lt;/p&gt;
+
+	&lt;form&gt;
+  		&lt;input type="radio" id="family" name="love" value="Family"&gt;
+  		&lt;label for="Family"&gt;family&lt;/label&gt;&lt;br&gt;
+  		&lt;input type="radio" id="money" name=love" value="Money"&gt;
+  		&lt;label for="Money"&gt;money&lt;/label&gt;&lt;br&gt;
+  		&lt;input type="radio" id="pu" name="love" value="Pu"&gt;
+  		&lt;label for="Pu"&gt;Pu&lt;/label&gt;
+	&lt;/form&gt;
+	</code>
+	</pre> 	
+			
+		
+	<a class="head2">output : </a>		
+    <pre class="bordercode">
+	<p>I love...</p><form>
+  <input type="radio" id="family" name="love" value="Family"><label for="family">Family</label><br>
+  <input type="radio" id="money" name="love" value="Money"><label for="money">Money</label><br>
+  <input type="radio" id="pu" name="love" value="Pu"><label for="pu">Pu</label>
+	</form>
+	</pre>
+    <!--------------------- -----------------------> 
+	<div>		
+	<a class="head">Checkboxes</a>	
+    <p class="content">The &lt;input type="checkbox"&gt; defines a checkbox.<br>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>		
+	</div>		
+	<a class="head2">code : </a>
+    <pre class="bordercode">
+    <code>
+&lt;form&gt;
+  &lt;input type="checkbox" id="meat1" name="meat1" value="menu1"&gt;&lt;label for="meat1"&gt; Rib eye&lt;/label&gt;&lt;br&gt;
+  &lt;input type="checkbox" id="bacon" name="bacon" value="menu2"&gt;&lt;label for="bacon"&gt; Bacon&lt;/label&gt;&lt;br&gt;
+  &lt;input type="checkbox" id="pawn" name="pawn" value="menu3"&gt;&lt;label for="pawn"&gt; Pawn&lt;/label&gt;
+&lt;/form&gt;
+	</code>
+	</pre> 	
+			
+		
+	<a class="head2">output : </a>		
+    <pre class="bordercode">
+	<form>
+  		<input type="checkbox" id="meat1" name="meat1" value="menu1"><label for="meat1"> Rib eye</label><br>
+  		<input type="checkbox" id="bacon" name="bacon" value="menu2"><label for="bacon"> Bacon</label><br>
+		<input type="checkbox" id="pawn" name="pawn" value="menu3"><label for="pawn"> Pawn</label>
+	</form>
+	</pre>
+    <!--------------------- -----------------------> 			
+
+  </section>
+  
+<!-- Footer -->	
+  <footer>
+    <p>Email : s39225@bj.ac.th </p>
+    <p>BENCHAMARACHUTHIT CHANTHABURI SCHOOL</p>
+  </footer>
+  
+	
+</body>
+</html>
